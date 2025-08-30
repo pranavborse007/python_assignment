@@ -28,8 +28,21 @@ print("Factorial of", num, "is:", factorial(num))
 # o    Sine of the number (in radians)
 # 3.   Displays the calculated results.
 
-num = int(input("enter a number : "))
-print("square root : ", num**(1/2))
+import math
+
+# 1. Ask the user for a number
+num = float(input("Enter a number: "))
+
+# 2. Use math module to calculate values
+sqrt_val = math.sqrt(num)
+log_val = math.log(num)       # Natural log (base e)
+sine_val = math.sin(num)      # Sine (in radians)
+
+# Print results
+print(f"Square root of {num} = {sqrt_val}")
+print(f"Natural log (base e) of {num} = {log_val}")
+print(f"Sine of {num} radians = {sine_val}")
+
 
 
 

@@ -8,7 +8,7 @@
 
 students = {"pranav" : 65, "mohit" : 98, "shantanu" : 76, "dipak" : 54}
 studentname = input("enter the student's name: ")
-if studentname == "pranav" or "mohit" or "shantanu" or "dipak":
+if studentname in students:
     print(studentname+"'s marks : " , students[studentname])
 else:
     print("student not found")
@@ -34,6 +34,7 @@ reversed_list = extracted[::-1]
 # Step 4: Print both lists
 print("Extracted list:", extracted)
 print("Reversed list:", reversed_list)
+
 
 
 
